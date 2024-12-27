@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
-import { cn } from '@/lib/utils'
 import { tv, type VariantProps } from 'tailwind-variants';
 
 const buttonStyles = tv({
@@ -41,7 +40,7 @@ const Button = ({
 }: ButtonProps) => {
   const Comp = asChild ? Slot : 'button'
   return (
-    <Comp className={cn(buttonStyles({ variant, size, className }))} {...props} />
+    <Comp className={buttonStyles({ variant, size, className })} {...props} />
   )
 }
 
