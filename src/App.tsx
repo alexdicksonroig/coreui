@@ -1,17 +1,20 @@
-import { useState } from 'react'
+import { useActionState } from 'react'
 
 import { Button } from '@/components/ui/button'
 
-import './App.css'
+async function increment(previousState: number, _: any) {
+  console.log(_)
+  return previousState + 1
+} 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state, formAction] = useActionState(increment, 0)
 
   return (
-    <>
+    <form>
       <div className="card">
-        <Button onClick={() => setCount(count => count + 1)}>
-          count is {count}
+        <Button formAction={formAction}>
+          count is {state}
         </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
@@ -20,7 +23,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </form>
   )
 }
 
