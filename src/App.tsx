@@ -13,7 +13,7 @@ function App() {
   return (
     <form>
       <div className="card">
-        <Button formAction={formAction}>
+        <Button variant='link' formAction={formAction}>
           count is {state}
         </Button>
         <p>
