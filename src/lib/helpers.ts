@@ -7,3 +7,7 @@ export function hideArgs(properties: string[]) {
     {}
   )
 }
+
+export function StoryConfig(){
+
+}

@@ -2,9 +2,12 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { Input } from '@/components/ui/input'
 
+function Component({ ...props}){
+  return Input
+}
 const meta = {
-  title: 'Example/Input',
-  component: Input,
+  title: 'Components/Input',
+  component: Component,
   parameters: {
     layout: 'centered',
   },

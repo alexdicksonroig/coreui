@@ -1,6 +1,6 @@
 import { useActionState } from 'react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/components/button'
 
 async function increment(previousState: number, _: any) {
   console.log(_)

@@ -1,16 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta } from '@storybook/react'
 import { hideArgs } from '@/lib/helpers'
 
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableFooter,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table'
+import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@/components/components/table'
 
 const invoices = [
   {
@@ -57,9 +48,9 @@ const invoices = [
   },
 ]
 
-export function Component() {
+export function Component({ ...props }: React.HTMLAttributes<HTMLTableElement>) {
   return (
-    <Table>
+    <Table {...props}>
       <TableCaption>A list of your recent invoices.</TableCaption>
       <TableHeader>
         <TableRow>
@@ -90,14 +81,11 @@ export function Component() {
 }
 
 const meta = {
-  title: 'Example/Table',
-  component: Table,
+  title: 'Components/Table',
+  component: Component,
   parameters: {
     layout: 'centered',
   },
-  argTypes: hideArgs(['children']),
-  tags: ['autodocs'],
-  args: { children: Component() },
 } satisfies Meta<typeof Table>
 
 export default meta

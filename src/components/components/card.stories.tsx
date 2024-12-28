@@ -1,5 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react'
-import { hideArgs } from '@/lib/helpers'
+import type { Meta } from '@storybook/react'
 
 import { Button } from "@/components/ui/button"
 import {
@@ -12,9 +11,9 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 
-export function Component() {
+export function Component({...props}) {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px]" {...props}>
       <CardHeader>
         <CardTitle>Create project</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>
@@ -38,14 +37,12 @@ export function Component() {
   )
 }
 const meta = {
-  title: 'Example/Card',
-  component: Card,
+  title: 'Components/Card',
+  component: Component,
   parameters: {
     layout: 'centered',
   },
-  argTypes: hideArgs(['children']),
   tags: ['autodocs'],
-  args: { children: Component() },
 } satisfies Meta<typeof Card>
 
 export default meta

@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/collections/card"
 import type { Meta, StoryObj } from '@storybook/react'
 import { hideArgs } from '@/lib/helpers'
 
@@ -31,16 +31,13 @@ export function Component() {
     </Carousel>
   )
 }
-
 const meta = {
-  title: 'Example/Carousel',
+  title: 'Collections/Carousel',
   component: Carousel,
   parameters: {
     layout: 'centered',
   },
-  argTypes: hideArgs(['children']),
   tags: ['autodocs'],
-  args: { children: Component() },
 } satisfies Meta<typeof Carousel>
 
 export default meta
