@@ -48,3 +48,28 @@ export default tseslint.config({
   },
 })
 ```
+
+
+TODO:
+-Themes/dark mode
+-Toast
+-Box component with skeleton when pending
+-Correct accordion
+-Datepicker
+-Checkbox
+-Dialog/Modal
+-Drawer
+-DropdownMenu
+-Navbar
+-Pagination
+-Switch
+-Textarea
+-Radio group
+-Select
+-Badge?
+-Combobox?
+-Progress?
+-Sheet?
+-Slider?
+-Tabs?
+-Data table?
