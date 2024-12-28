@@ -4,7 +4,7 @@ import { fn } from '@storybook/test'
 import { Button, buttonStyles } from '@/components/ui/button'
 import { hideArgs } from '@/lib/helpers'
 
-const Component = () => {
+export function Component() {
   return <p>Button</p> 
 }
 
@@ -30,11 +30,3 @@ const meta = {
 } satisfies Meta<typeof Button>
 
 export default meta
-type Story = StoryObj<typeof meta>
-
-export const Primary: Story = {
-  args: {
-    variant: 'default',
-    size: 'default',
-  },
-}

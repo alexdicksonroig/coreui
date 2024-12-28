@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import { hideArgs } from '@/lib/helpers'
 
 import {
   Table,
@@ -94,13 +95,9 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  argTypes: hideArgs(['children']),
   tags: ['autodocs'],
   args: { children: Component() },
 } satisfies Meta<typeof Table>
 
 export default meta
-type Story = StoryObj<typeof meta>
-
-export const Primary: Story = {
-  args: {},
-}
