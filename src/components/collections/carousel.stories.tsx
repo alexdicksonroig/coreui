@@ -1,6 +1,5 @@
-import { Card, CardContent } from "@/components/collections/card"
+import { Card, CardContent } from "@/components/components/card"
 import type { Meta, StoryObj } from '@storybook/react'
-import { hideArgs } from '@/lib/helpers'
 
 import {
   Carousel,

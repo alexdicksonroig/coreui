@@ -1,17 +1,10 @@
 import type { Meta } from '@storybook/react'
 
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { Button } from '@/components/components/button'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/components/card'
+import { Input } from '@/components/components/input'
 
-export function Component({...props}) {
+export function Component({ ...props }) {
   return (
     <Card className="w-[350px]" {...props}>
       <CardHeader>
@@ -24,8 +17,7 @@ export function Component({...props}) {
             <div className="flex flex-col space-y-1.5">
               <Input id="name" placeholder="Name of your project" />
             </div>
-            <div className="flex flex-col space-y-1.5">
-            </div>
+            <div className="flex flex-col space-y-1.5"></div>
           </div>
         </form>
       </CardContent>

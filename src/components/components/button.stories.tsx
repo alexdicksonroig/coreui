@@ -1,7 +1,7 @@
 import type { Meta } from '@storybook/react'
 import { fn } from '@storybook/test'
 
-import { Button, buttonStyles, ButtonProps } from '@/components/ui/button'
+import { Button, buttonStyles, ButtonProps } from '@/components/components/button'
 import { hideArgs } from '@/lib/helpers'
 
 export function Component({ ...props }: ButtonProps) {
