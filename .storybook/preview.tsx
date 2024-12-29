@@ -16,4 +16,9 @@ export const parameters: Parameters = {
     // Override the default light theme
     light: { ...themes.normal, appBg: 'white' },
   },
+  options: {
+    storySort: {
+      order: ['Components','Collections'],
+    }
+  },
 }
