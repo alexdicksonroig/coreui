@@ -83,10 +83,6 @@ export function Component({ ...props }: React.HTMLAttributes<HTMLTableElement>) 
 const meta = {
   title: 'Components/Table',
   component: Component,
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 } satisfies Meta<typeof Table>
 
 export default meta

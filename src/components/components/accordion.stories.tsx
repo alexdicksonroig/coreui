@@ -36,10 +36,6 @@ export function Component() {
 const meta = {
   title: 'Components/Accordion',
   component: Component,
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 } satisfies Meta<typeof Accordion>
 
 export default meta

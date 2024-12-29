@@ -9,10 +9,6 @@ export function Component({ ...props }) {
 const meta = {
   title: 'Components/Input',
   component: Component,
-  parameters: {
-    layout: 'centered',
-  },
-  tags: ['autodocs'],
 } satisfies Meta<typeof Input>
 
 export default meta

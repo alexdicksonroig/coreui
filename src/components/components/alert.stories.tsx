@@ -16,15 +16,11 @@ export function Component({ ...props }) {
 const meta = {
   title: 'Components/Alert',
   component: Component,
-  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: { type: 'select' },
       options: Object.keys(alertStyles.variants.variant),
     },
-  },
-  parameters: {
-    layout: 'centered',
   },
 } satisfies Meta<typeof Alert>
 

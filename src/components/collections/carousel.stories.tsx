@@ -27,10 +27,6 @@ export function Component() {
 const meta = {
   title: 'Collections/Carousel',
   component: Carousel,
-  parameters: {
-    layout: 'centered',
-  },
-  tags: ['autodocs'],
 } satisfies Meta<typeof Carousel>
 
 export default meta

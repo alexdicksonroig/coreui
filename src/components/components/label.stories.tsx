@@ -19,10 +19,6 @@ export function Component() {
 const meta = {
   title: 'Components/Label',
   component: Component,
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 } satisfies Meta<typeof Label>
 
 export default meta

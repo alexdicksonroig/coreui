@@ -16,10 +16,6 @@ export function Component() {
 const meta = {
   title: 'Components/Skeleton',
   component: Component,
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'centered',
-  },
 } satisfies Meta<typeof Skeleton>
 
 export default meta

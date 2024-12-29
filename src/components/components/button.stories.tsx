@@ -15,10 +15,6 @@ export function Component({ ...props }: ButtonProps) {
 const meta = {
   title: 'Components/Button',
   component: Component,
-  parameters: {
-    layout: 'centered',
-  },
-  tags: ['autodocs'],
   argTypes: {
     variant: {
       control: { type: 'select' },
