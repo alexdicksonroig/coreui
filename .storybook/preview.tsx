@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { themes } from '@storybook/theming';
+import { themes } from '@storybook/theming'
 import { Decorator, Parameters } from '@storybook/react'
 
 import '../src/index.css'
@@ -8,9 +8,9 @@ type Theme = 'light' | 'dark'
 
 const withTheme: Decorator = (Story, context) => {
   const theme = context.globals.theme as Theme
-
+  console.log(context.globals)
   useEffect(() => {
-    var root = document.getElementsByTagName('html')[0]
+    var root = document.documentElement
     if (theme === 'dark') {
       root.classList.add('dark')
     } else {
@@ -30,5 +30,9 @@ export const parameters: Parameters = {
   controls: { expanded: true },
   darkMode: {
     stylePreview: true,
-  }
+    // Override the default dark theme
+    dark: { ...themes.dark, appBg: 'black' },
+    // Override the default light theme
+    light: { ...themes.normal, appBg: 'white' },
+  },
 }
