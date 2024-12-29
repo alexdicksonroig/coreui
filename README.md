@@ -65,6 +65,7 @@ TODO:
 -Textarea
 -Radio group
 -Select
+-Stepper
 
 -Badge?
 -Combobox?
