@@ -28,6 +28,7 @@ const buttonStyles = tv({
     size: 'default',
   },
 })
+
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonStyles> {
