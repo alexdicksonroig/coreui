@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/components/card'
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta } from '@storybook/react'
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/collections/carousel'
 

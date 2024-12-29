@@ -1,5 +1,4 @@
 import type { Meta } from '@storybook/react'
-import { hideArgs } from '@/lib/helpers'
 
 import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@/components/components/table'
 

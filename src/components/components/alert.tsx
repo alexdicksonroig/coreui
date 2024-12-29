@@ -7,6 +7,7 @@ export const alertStyles = tv({
     variant: {
       default: 'bg-background text-foreground',
       destructive: 'border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive',
+
     },
   },
   defaultVariants: {
@@ -14,7 +15,7 @@ export const alertStyles = tv({
   },
 })
 
-type AlertProps = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
+type AlertProps = React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertStyles>
 
 const Alert: React.FC<AlertProps> = ({ className = '', variant, ...props }) => {
   const classes = `${alertStyles({ variant })} ${className}`

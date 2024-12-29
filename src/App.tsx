@@ -2,8 +2,7 @@ import { useActionState } from 'react'
 
 import { Button } from '@/components/components/button'
 
-async function increment(previousState: number, _: any) {
-  console.log(_)
+async function increment(previousState: number) {
   return previousState + 1
 } 
 
